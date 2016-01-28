@@ -1,0 +1,1017 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ana Isabel Lopera Martínez</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Agencia_transporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Línea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Línea_bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Línea_metro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parada_autobús"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parada_metro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehículo_transporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#horario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tarifa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tramo_horario"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Agencia_gestionadora"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#autobús_de_transporte"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parada_destino"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parada_origen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tiene_horario"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tiene_paradas_intermedias"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tiene_tarifa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tren_de_transporte"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Codigo_Parada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre_de_la_agencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Rampa_elevadora"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Ubicación"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aforo_máximo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coste_abono_mensual"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coste_unitario_billete"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptor_de_edad_de_la_tarifa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptor_parada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dias_aplicables"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#espacios_para_silla/maleta/bicicleta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fin_tramo_horario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#frecuencia_de_servicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hora_apertura_parada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hora_de_cierre_parada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hora_de_inicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hora_fin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horario_festivo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inicio_tamo_horario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_línea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#número_de_plazas_reservadas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#offset_frecuencia_de_servicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#parada_ida"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pertenece_a_estacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#página_web_agencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefóno_contacto_agencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#velocidad_máxima_permitida"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#zona_tarifaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BRAVO_MURILLO-PALENCIA_(nº122)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BRAVO_MURILLO-PLAZA_CASTILLA_(nº384)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EMT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GTA._CUATRO_CAMINOS_(nº7)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mercedes_O-530_CITARO_CNG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pº_CASTELLANA-AGUSTÍN_DE_FOXÁ_(nº218)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SAN_CUGAT_DEL_VALLÉS-BRAILLE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VIEJAS-PABLO_LUNA_(nº6)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario_festivo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario_laboral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#línea_66"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tarifa_zona_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tramo_horario_tarde_festivo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tramo_tarde_normal"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Vehículo_transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Línea_bus"/>
+        <Class IRI="#Línea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Línea_metro"/>
+        <Class IRI="#Línea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <Class IRI="#Vehículo_transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parada_autobús"/>
+        <Class IRI="#Parada"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parada_metro"/>
+        <Class IRI="#Parada"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Agencia_transporte"/>
+        <NamedIndividual IRI="#EMT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Línea_bus"/>
+        <NamedIndividual IRI="#línea_66"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+        <NamedIndividual IRI="#horario_festivo"/>
+        <NamedIndividual IRI="#tramo_horario_tarde_festivo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+        <NamedIndividual IRI="#horario_festivo"/>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+        <NamedIndividual IRI="#horario_laboral"/>
+        <NamedIndividual IRI="#tramo_tarde_normal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+        <NamedIndividual IRI="#horario_laboral"/>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Agencia_gestionadora"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#EMT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#autobús_de_transporte"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#Mercedes_O-530_CITARO_CNG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parada_destino"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#SAN_CUGAT_DEL_VALLÉS-BRAILLE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parada_origen"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#GTA._CUATRO_CAMINOS_(nº7)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_horario"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#horario_festivo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_horario"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#horario_laboral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_paradas_intermedias"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#BRAVO_MURILLO-PLAZA_CASTILLA_(nº384)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_paradas_intermedias"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#BRAVO_MURILLO-PALENCIA_(nº122)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_paradas_intermedias"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#Pº_CASTELLANA-AGUSTÍN_DE_FOXÁ_(nº218)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_paradas_intermedias"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#VIEJAS-PABLO_LUNA_(nº6)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene_tarifa"/>
+        <NamedIndividual IRI="#línea_66"/>
+        <NamedIndividual IRI="#tarifa_zona_A"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#página_web_agencia"/>
+        <NamedIndividual IRI="#EMT"/>
+        <Literal datatypeIRI="&xsd;string">http://www.emtmadrid.es/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefóno_contacto_agencia"/>
+        <NamedIndividual IRI="#EMT"/>
+        <Literal datatypeIRI="&xsd;integer">902 50 78 50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Rampa_elevadora"/>
+        <NamedIndividual IRI="#Mercedes_O-530_CITARO_CNG"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#velocidad_máxima_permitida"/>
+        <NamedIndividual IRI="#Mercedes_O-530_CITARO_CNG"/>
+        <Literal datatypeIRI="&xsd;integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dias_aplicables"/>
+        <NamedIndividual IRI="#horario_festivo"/>
+        <Literal datatypeIRI="&xsd;string">Domingo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dias_aplicables"/>
+        <NamedIndividual IRI="#horario_laboral"/>
+        <Literal datatypeIRI="&xsd;string">Lunes-Viernes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coste_abono_mensual"/>
+        <NamedIndividual IRI="#tarifa_zona_A"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coste_unitario_billete"/>
+        <NamedIndividual IRI="#tarifa_zona_A"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1.50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descriptor_de_edad_de_la_tarifa"/>
+        <NamedIndividual IRI="#tarifa_zona_A"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">joven</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#zona_tarifaria"/>
+        <NamedIndividual IRI="#tarifa_zona_A"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tramo_horario"/>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+        <Literal datatypeIRI="&xsd;string">12:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tramo_horario"/>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#frecuencia_de_servicio"/>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+        <Literal datatypeIRI="&xsd;integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tamo_horario"/>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+        <Literal datatypeIRI="&xsd;string">6:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#offset_frecuencia_de_servicio"/>
+        <NamedIndividual IRI="#tramo_horario_mañana"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tramo_horario"/>
+        <NamedIndividual IRI="#tramo_horario_tarde_festivo"/>
+        <Literal datatypeIRI="&xsd;string">23:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#frecuencia_de_servicio"/>
+        <NamedIndividual IRI="#tramo_horario_tarde_festivo"/>
+        <Literal datatypeIRI="&xsd;integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tamo_horario"/>
+        <NamedIndividual IRI="#tramo_horario_tarde_festivo"/>
+        <Literal datatypeIRI="&xsd;string">12:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#offset_frecuencia_de_servicio"/>
+        <NamedIndividual IRI="#tramo_horario_tarde_festivo"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tramo_horario"/>
+        <NamedIndividual IRI="#tramo_tarde_normal"/>
+        <Literal datatypeIRI="&xsd;string">23:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#frecuencia_de_servicio"/>
+        <NamedIndividual IRI="#tramo_tarde_normal"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tamo_horario"/>
+        <NamedIndividual IRI="#tramo_tarde_normal"/>
+        <Literal datatypeIRI="&xsd;string">12:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#offset_frecuencia_de_servicio"/>
+        <NamedIndividual IRI="#tramo_tarde_normal"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#parada_destino"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Agencia_gestionadora"/>
+        <Class IRI="#Línea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#autobús_de_transporte"/>
+        <Class IRI="#Línea_bus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#parada_destino"/>
+        <Class IRI="#Línea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#parada_origen"/>
+        <Class IRI="#Línea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tiene_horario"/>
+        <Class IRI="#Línea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tiene_paradas_intermedias"/>
+        <Class IRI="#Línea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tiene_tarifa"/>
+        <Class IRI="#Línea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+        <Class IRI="#horario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tren_de_transporte"/>
+        <Class IRI="#Línea_metro"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Agencia_gestionadora"/>
+        <Class IRI="#Agencia_transporte"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#autobús_de_transporte"/>
+        <Class IRI="#Bus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#parada_destino"/>
+        <Class IRI="#Parada"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#parada_origen"/>
+        <Class IRI="#Parada"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene_horario"/>
+        <Class IRI="#horario"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene_paradas_intermedias"/>
+        <Class IRI="#Parada"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene_tarifa"/>
+        <Class IRI="#tarifa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene_tramo_horario"/>
+        <Class IRI="#tramo_horario"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tren_de_transporte"/>
+        <Class IRI="#Metro"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Nombre_de_la_agencia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Rampa_elevadora"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aforo_máximo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#coste_abono_mensual"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#coste_unitario_billete"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#descriptor_de_edad_de_la_tarifa"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#espacios_para_silla/maleta/bicicleta"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fin_tramo_horario"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#frecuencia_de_servicio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hora_apertura_parada"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hora_de_cierre_parada"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hora_de_inicio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#horario_festivo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre_línea"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#número_de_plazas_reservadas"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#offset_frecuencia_de_servicio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#página_web_agencia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#telefóno_contacto_agencia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#velocidad_máxima_permitida"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#zona_tarifaria"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Codigo_Parada"/>
+        <Class IRI="#Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_de_la_agencia"/>
+        <Class IRI="#Agencia_transporte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Rampa_elevadora"/>
+        <Class IRI="#Bus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Ubicación"/>
+        <Class IRI="#Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aforo_máximo"/>
+        <Class IRI="#Vehículo_transporte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coste_abono_mensual"/>
+        <Class IRI="#tarifa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coste_unitario_billete"/>
+        <Class IRI="#tarifa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptor_de_edad_de_la_tarifa"/>
+        <Class IRI="#tarifa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptor_parada"/>
+        <Class IRI="#Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dias_aplicables"/>
+        <Class IRI="#horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fin_tramo_horario"/>
+        <Class IRI="#tramo_horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#frecuencia_de_servicio"/>
+        <Class IRI="#tramo_horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hora_apertura_parada"/>
+        <Class IRI="#Parada_metro"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hora_de_cierre_parada"/>
+        <Class IRI="#Parada_metro"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hora_de_inicio"/>
+        <Class IRI="#horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hora_fin"/>
+        <Class IRI="#horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horario_festivo"/>
+        <Class IRI="#horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inicio_tamo_horario"/>
+        <Class IRI="#tramo_horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_línea"/>
+        <Class IRI="#Línea"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#número_de_plazas_reservadas"/>
+        <Class IRI="#Metro"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#offset_frecuencia_de_servicio"/>
+        <Class IRI="#tramo_horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#parada_ida"/>
+        <Class IRI="#Parada_autobús"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pertenece_a_estacion"/>
+        <Class IRI="#Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#página_web_agencia"/>
+        <Class IRI="#Agencia_transporte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefóno_contacto_agencia"/>
+        <Class IRI="#Agencia_transporte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#zona_tarifaria"/>
+        <Class IRI="#tarifa"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Codigo_Parada"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Nombre_de_la_agencia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Rampa_elevadora"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Ubicación"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aforo_máximo"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#coste_abono_mensual"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#coste_unitario_billete"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptor_de_edad_de_la_tarifa"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptor_parada"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dias_aplicables"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#espacios_para_silla/maleta/bicicleta"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fin_tramo_horario"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#frecuencia_de_servicio"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hora_apertura_parada"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hora_de_cierre_parada"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hora_de_inicio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hora_fin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horario_festivo"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inicio_tamo_horario"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_línea"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#número_de_plazas_reservadas"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#offset_frecuencia_de_servicio"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#parada_ida"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pertenece_a_estacion"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#página_web_agencia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefóno_contacto_agencia"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#velocidad_máxima_permitida"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#zona_tarifaria"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agencia_gestionadora</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agencia que gestiona el servicio de la línea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nombre_de_la_agencia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nombre comercial de la agencia de transportes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rampa_elevadora</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica si el autobús dispone de rampa elevadora
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ubicación</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ubicación en coordenadas de la parada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aforo_máximo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Número de pasajeros máximo del medio de transporte
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#autobús_de_transporte</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Transporte que presta servicio en la línea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coste_abono_mensual</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coste del abono mensual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coste_unitario_billete</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coste del billete sencillo para un trayecto en la línea determinada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#descriptor_de_edad_de_la_tarifa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica el rango de edades a las que se aplica la tarifa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#descriptor_parada</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Descripción de la parada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dias_aplicables</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dias a los que se aplica el horario, separados por comas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#espacios_para_silla/maleta/bicicleta</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica el número de espacios destinados para sillas de ruedas, carritos, maletas o bicicletas
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fin_tramo_horario</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hora de fin del tramo horario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#frecuencia_de_servicio</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Frecuencia de servicio, expresada en minutos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hora_apertura_parada</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica la hora de apertura de la parada de metro (formato HH:MM)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hora_de_cierre_parada</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica la hora de apertura de la parada de metro (formato HH:MM)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hora_de_inicio</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hora de inicio de una parada en particular, con formato (HH:MM)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hora_fin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hora de finalización del servicio de la línea para un horario concreto, con formato (HH:MM)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#horario_festivo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica si el horario se refiere a días festivos o no.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inicio_tamo_horario</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Inicio del tramo horario, con el formato &quot;HH:MM&quot;
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#línea_66</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Línea 66 de Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nombre_línea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nombre de la línea, en términos entendibles por el viajero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#número_de_plazas_reservadas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Número de plazas destinadas a pasajeros con preferencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#offset_frecuencia_de_servicio</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Variación +/- sobre la frecuencia de servicio de un tramo horario en particular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#parada_destino</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Parada de destino de la línea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#parada_ida</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica si la parada de autobús corresponde al trayecto de ida o en caso contrario
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#parada_origen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Parada de origen de la línea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pertenece_a_estacion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica si la parada pertenece a una estación con más paradas o es una marquesina.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#página_web_agencia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Página web oficial de la Agencia
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#telefóno_contacto_agencia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teléfono de información de la agencia de transportes
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tiene_horario</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica un horario en particular de la línea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tiene_paradas_intermedias</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indica las paradas intermedias de la línea
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tiene_tarifa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tarifa aplicable a la línea
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tren_de_transporte</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Transporte que presta servicio en la línea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#velocidad_máxima_permitida</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Velocidad máxima permitida del vehículo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#zona_tarifaria</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Descriptor de la zona tarifaria de la línea
+</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

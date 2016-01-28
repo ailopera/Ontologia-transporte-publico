@@ -1,0 +1,705 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-12 "http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12">
+        <terms:creator>Ana Isabel Lopera Martínez</terms:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Agencia_gestionadora -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;Agencia_gestionadora">
+        <rdfs:comment>Agencia que gestiona el servicio de la línea</rdfs:comment>
+        <rdfs:range rdf:resource="&untitled-ontology-12;Agencia_transporte"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#autobús_de_transporte -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;autobús_de_transporte">
+        <rdfs:comment>Transporte que presta servicio en la línea</rdfs:comment>
+        <rdfs:range rdf:resource="&untitled-ontology-12;Bus"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea_bus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#parada_destino -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;parada_destino">
+        <rdfs:comment>Parada de destino de la línea</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea"/>
+        <rdfs:range rdf:resource="&untitled-ontology-12;Parada"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#parada_origen -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;parada_origen">
+        <rdfs:comment>Parada de origen de la línea</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea"/>
+        <rdfs:range rdf:resource="&untitled-ontology-12;Parada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tiene_horario -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;tiene_horario">
+        <rdfs:comment>Indica un horario en particular de la línea</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea"/>
+        <rdfs:range rdf:resource="&untitled-ontology-12;horario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tiene_paradas_intermedias -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;tiene_paradas_intermedias">
+        <rdfs:comment>Indica las paradas intermedias de la línea
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea"/>
+        <rdfs:range rdf:resource="&untitled-ontology-12;Parada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tiene_tarifa -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;tiene_tarifa">
+        <rdfs:comment>Tarifa aplicable a la línea
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea"/>
+        <rdfs:range rdf:resource="&untitled-ontology-12;tarifa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tiene_tramo_horario -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;tiene_tramo_horario">
+        <rdfs:domain rdf:resource="&untitled-ontology-12;horario"/>
+        <rdfs:range rdf:resource="&untitled-ontology-12;tramo_horario"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tren_de_transporte -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-12;tren_de_transporte">
+        <rdfs:comment>Transporte que presta servicio en la línea</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea_metro"/>
+        <rdfs:range rdf:resource="&untitled-ontology-12;Metro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Codigo_Parada -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;Codigo_Parada">
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Parada"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Nombre_de_la_agencia -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;Nombre_de_la_agencia">
+        <rdfs:comment>Nombre comercial de la agencia de transportes</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Agencia_transporte"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Rampa_elevadora -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;Rampa_elevadora">
+        <rdfs:comment>Indica si el autobús dispone de rampa elevadora
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Bus"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Ubicación -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;Ubicación">
+        <rdfs:comment>Ubicación en coordenadas de la parada</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Parada"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#aforo_máximo -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;aforo_máximo">
+        <rdfs:comment>Número de pasajeros máximo del medio de transporte
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Vehículo_transporte"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#coste_abono_mensual -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;coste_abono_mensual">
+        <rdfs:comment>Coste del abono mensual</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tarifa"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#coste_unitario_billete -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;coste_unitario_billete">
+        <rdfs:comment>Coste del billete sencillo para un trayecto en la línea determinada</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tarifa"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#descriptor_de_edad_de_la_tarifa -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;descriptor_de_edad_de_la_tarifa">
+        <rdfs:comment>Indica el rango de edades a las que se aplica la tarifa</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tarifa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#descriptor_parada -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;descriptor_parada">
+        <rdfs:comment>Descripción de la parada</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Parada"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#dias_aplicables -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;dias_aplicables">
+        <rdfs:comment>Dias a los que se aplica el horario, separados por comas</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;horario"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#espacios_para_silla/maleta/bicicleta -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;espacios_para_silla/maleta/bicicleta">
+        <rdfs:comment>Indica el número de espacios destinados para sillas de ruedas, carritos, maletas o bicicletas
+</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#fin_tramo_horario -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;fin_tramo_horario">
+        <rdfs:comment>Hora de fin del tramo horario</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tramo_horario"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#frecuencia_de_servicio -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;frecuencia_de_servicio">
+        <rdfs:comment>Frecuencia de servicio, expresada en minutos</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tramo_horario"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#hora_apertura_parada -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;hora_apertura_parada">
+        <rdfs:comment>Indica la hora de apertura de la parada de metro (formato HH:MM)</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Parada_metro"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#hora_de_cierre_parada -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;hora_de_cierre_parada">
+        <rdfs:comment>Indica la hora de apertura de la parada de metro (formato HH:MM)
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Parada_metro"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#hora_de_inicio -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;hora_de_inicio">
+        <rdfs:comment>Hora de inicio de una parada en particular, con formato (HH:MM)</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;horario"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#hora_fin -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;hora_fin">
+        <rdfs:comment>Hora de finalización del servicio de la línea para un horario concreto, con formato (HH:MM)
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;horario"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#horario_festivo -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;horario_festivo">
+        <rdfs:comment>Indica si el horario se refiere a días festivos o no.</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;horario"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#inicio_tamo_horario -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;inicio_tamo_horario">
+        <rdfs:comment>Inicio del tramo horario, con el formato &quot;HH:MM&quot;
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tramo_horario"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#nombre_línea -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;nombre_línea">
+        <rdfs:comment>Nombre de la línea, en términos entendibles por el viajero</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Línea"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#número_de_plazas_reservadas -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;número_de_plazas_reservadas">
+        <rdfs:comment>Número de plazas destinadas a pasajeros con preferencia</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Metro"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#offset_frecuencia_de_servicio -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;offset_frecuencia_de_servicio">
+        <rdfs:comment>Variación +/- sobre la frecuencia de servicio de un tramo horario en particular</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tramo_horario"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#parada_ida -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;parada_ida">
+        <rdfs:comment>Indica si la parada de autobús corresponde al trayecto de ida o en caso contrario
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Parada_autobús"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#pertenece_a_estacion -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;pertenece_a_estacion">
+        <rdfs:comment>Indica si la parada pertenece a una estación con más paradas o es una marquesina.</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Parada"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#página_web_agencia -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;página_web_agencia">
+        <rdfs:comment>Página web oficial de la Agencia
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Agencia_transporte"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#telefóno_contacto_agencia -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;telefóno_contacto_agencia">
+        <rdfs:comment>Teléfono de información de la agencia de transportes
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;Agencia_transporte"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#velocidad_máxima_permitida -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;velocidad_máxima_permitida">
+        <rdfs:comment>Velocidad máxima permitida del vehículo</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#zona_tarifaria -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-12;zona_tarifaria">
+        <rdfs:comment>Descriptor de la zona tarifaria de la línea
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&untitled-ontology-12;tarifa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Agencia_transporte -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Agencia_transporte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Bus -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Bus">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-12;Vehículo_transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Línea -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Línea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Línea_bus -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Línea_bus">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-12;Línea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Línea_metro -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Línea_metro">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-12;Línea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Metro -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Metro">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-12;Vehículo_transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Parada -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Parada"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Parada_autobús -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Parada_autobús">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-12;Parada"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Parada_metro -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Parada_metro">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-12;Parada"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Vehículo_transporte -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;Vehículo_transporte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#horario -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;horario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tarifa -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;tarifa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tramo_horario -->
+
+    <owl:Class rdf:about="&untitled-ontology-12;tramo_horario"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#BRAVO_MURILLO-PALENCIA_(nº122) -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;BRAVO_MURILLO-PALENCIA_(nº122)"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#BRAVO_MURILLO-PLAZA_CASTILLA_(nº384) -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;BRAVO_MURILLO-PLAZA_CASTILLA_(nº384)"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#EMT -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;EMT">
+        <rdf:type rdf:resource="&untitled-ontology-12;Agencia_transporte"/>
+        <telefóno_contacto_agencia rdf:datatype="&xsd;integer">902 50 78 50</telefóno_contacto_agencia>
+        <página_web_agencia rdf:datatype="&xsd;string">http://www.emtmadrid.es/</página_web_agencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#GTA._CUATRO_CAMINOS_(nº7) -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;GTA._CUATRO_CAMINOS_(nº7)"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Mercedes_O-530_CITARO_CNG -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;Mercedes_O-530_CITARO_CNG">
+        <velocidad_máxima_permitida rdf:datatype="&xsd;integer">50</velocidad_máxima_permitida>
+        <Rampa_elevadora rdf:datatype="&xsd;boolean">true</Rampa_elevadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#Pº_CASTELLANA-AGUSTÍN_DE_FOXÁ_(nº218) -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;Pº_CASTELLANA-AGUSTÍN_DE_FOXÁ_(nº218)"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#SAN_CUGAT_DEL_VALLÉS-BRAILLE -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;SAN_CUGAT_DEL_VALLÉS-BRAILLE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#VIEJAS-PABLO_LUNA_(nº6) -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;VIEJAS-PABLO_LUNA_(nº6)"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#horario_festivo -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;horario_festivo">
+        <dias_aplicables rdf:datatype="&xsd;string">Domingo</dias_aplicables>
+        <rdfs:comment>Indica si el horario se refiere a días festivos o no.</rdfs:comment>
+        <tiene_tramo_horario rdf:resource="&untitled-ontology-12;tramo_horario_mañana"/>
+        <tiene_tramo_horario rdf:resource="&untitled-ontology-12;tramo_horario_tarde_festivo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#horario_laboral -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;horario_laboral">
+        <dias_aplicables rdf:datatype="&xsd;string">Lunes-Viernes</dias_aplicables>
+        <tiene_tramo_horario rdf:resource="&untitled-ontology-12;tramo_horario_mañana"/>
+        <tiene_tramo_horario rdf:resource="&untitled-ontology-12;tramo_tarde_normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#línea_66 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;línea_66">
+        <rdf:type rdf:resource="&untitled-ontology-12;Línea_bus"/>
+        <rdfs:comment>Línea 66 de Madrid</rdfs:comment>
+        <tiene_paradas_intermedias rdf:resource="&untitled-ontology-12;BRAVO_MURILLO-PALENCIA_(nº122)"/>
+        <tiene_paradas_intermedias rdf:resource="&untitled-ontology-12;BRAVO_MURILLO-PLAZA_CASTILLA_(nº384)"/>
+        <Agencia_gestionadora rdf:resource="&untitled-ontology-12;EMT"/>
+        <parada_origen rdf:resource="&untitled-ontology-12;GTA._CUATRO_CAMINOS_(nº7)"/>
+        <autobús_de_transporte rdf:resource="&untitled-ontology-12;Mercedes_O-530_CITARO_CNG"/>
+        <tiene_paradas_intermedias rdf:resource="&untitled-ontology-12;Pº_CASTELLANA-AGUSTÍN_DE_FOXÁ_(nº218)"/>
+        <parada_destino rdf:resource="&untitled-ontology-12;SAN_CUGAT_DEL_VALLÉS-BRAILLE"/>
+        <tiene_paradas_intermedias rdf:resource="&untitled-ontology-12;VIEJAS-PABLO_LUNA_(nº6)"/>
+        <tiene_horario rdf:resource="&untitled-ontology-12;horario_festivo"/>
+        <tiene_horario rdf:resource="&untitled-ontology-12;horario_laboral"/>
+        <tiene_tarifa rdf:resource="&untitled-ontology-12;tarifa_zona_A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tarifa_zona_A -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;tarifa_zona_A">
+        <zona_tarifaria>A</zona_tarifaria>
+        <descriptor_de_edad_de_la_tarifa>joven</descriptor_de_edad_de_la_tarifa>
+        <coste_unitario_billete>1.50</coste_unitario_billete>
+        <coste_abono_mensual>20</coste_abono_mensual>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tramo_horario_mañana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;tramo_horario_mañana">
+        <fin_tramo_horario rdf:datatype="&xsd;string"></fin_tramo_horario>
+        <frecuencia_de_servicio rdf:datatype="&xsd;integer">10</frecuencia_de_servicio>
+        <fin_tramo_horario rdf:datatype="&xsd;string">12:00</fin_tramo_horario>
+        <offset_frecuencia_de_servicio rdf:datatype="&xsd;integer">5</offset_frecuencia_de_servicio>
+        <inicio_tamo_horario rdf:datatype="&xsd;string">6:00</inicio_tamo_horario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tramo_horario_tarde_festivo -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;tramo_horario_tarde_festivo">
+        <inicio_tamo_horario rdf:datatype="&xsd;string">12:00</inicio_tamo_horario>
+        <frecuencia_de_servicio rdf:datatype="&xsd;integer">15</frecuencia_de_servicio>
+        <fin_tramo_horario rdf:datatype="&xsd;string">23:30</fin_tramo_horario>
+        <offset_frecuencia_de_servicio rdf:datatype="&xsd;integer">7</offset_frecuencia_de_servicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/samsung/ontologies/2016/0/untitled-ontology-12#tramo_tarde_normal -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-12;tramo_tarde_normal">
+        <inicio_tamo_horario rdf:datatype="&xsd;string">12:00</inicio_tamo_horario>
+        <fin_tramo_horario rdf:datatype="&xsd;string">23:30</fin_tramo_horario>
+        <offset_frecuencia_de_servicio rdf:datatype="&xsd;integer">5</offset_frecuencia_de_servicio>
+        <frecuencia_de_servicio rdf:datatype="&xsd;integer">7</frecuencia_de_servicio>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
